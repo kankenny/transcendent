@@ -1,0 +1,53 @@
+## v0.2.5 (2025-04-30)
+
+## v0.2.4 (2025-04-30)
+
+### Fix
+
+- **deploy.yml**: grant content access
+
+## v0.2.3 (2025-04-30)
+
+### Fix
+
+- mock
+
+## v0.2.2 (2025-04-30)
+
+## v0.2.1 (2022-01-25)
+
+### Fix
+
+- **workflow**: remove fetch depth limit in deploy workflow
+- **workflow**: remove fetch depth limit in deploy workflow
+
+## v0.2.0 (2022-01-25)
+
+### Feat
+
+- turn repo into a template
+
+## v0.1.3 (2022-01-25)
+
+### Fix
+
+- **workflow**: use personal access token to trigger deploy workflow
+- **workflow**: use personal access token to trigger deploy workflow
+
+## v0.1.2 (2022-01-25)
+
+### Fix
+
+- **workflow**: run deploy after version is bumped
+- **workflow**: run deploy after version is bumped
+
+## v0.1.1 (2022-01-25)
+
+### Fix
+
+- **workflow**: set branch in bump workflow
+- **workflow**: set branch in bump workflow
+- **workflow**: update git config
+- **workflow**: update git config
+- **workflow**: added project version to environment vars in deploy workflow
+- **workflow**: added project version to environment vars in deploy workflow
