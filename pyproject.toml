@@ -1,6 +1,6 @@
 [project]
 name = "transcendent"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
 authors = [
     {name = "Kennete Basco",email = "97374837+kankenny@users.noreply.github.com"}
@@ -8,7 +8,7 @@ authors = [
 license = { text = "MIT License" }
 requires-python = ">=3.10,<3.13"
 
-dependencies = ["smolagents[toolkit] (>=1.21.3,<2.0.0)"]
+dependencies = []
 
 [project.scripts]
 transcendent = "transcendent:main"
@@ -37,7 +37,7 @@ exclude = '''
 '''
 
 [tool.commitizen]
-version = "0.1.0"
+version = "0.2.0"
 tag_format = "v$version"
 version_files = [
   "pyproject.toml:version",
