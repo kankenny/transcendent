@@ -8,6 +8,7 @@ czc:
 deps:
 	python -m pip install poetry
 	python -m pip install commitizen
+	python -m pip install pre-commit
 	poetry install
 	poetry run pre-commit install
 	poetry env info
