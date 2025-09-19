@@ -27,6 +27,7 @@ def build_local_model():
         model_id = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
     else:
         model_id = "mistralai/Mistral-7B-Instruct-v0.3"
+
     return TransformersModel(
         model_id=model_id,
         device_map="auto",
