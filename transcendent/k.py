@@ -24,6 +24,7 @@ def load_agent():
         except Exception as e:
             print(f"Remote model unavailable: {e}")
             model = build_local_model()
+
     return CodeAgent(
         tools=[DuckDuckGoSearchTool()],
         model=model,
@@ -34,11 +35,12 @@ def load_agent():
 
 def ask_agent(agent, prompt):
     result = agent.run(prompt)
-    print(f"\nAgent response:\n{result}\n")
+    print(result)
 
 
 if __name__ == "__main__":
     agent = load_agent()
+
     try:
         while True:
             prompt = input("\nHello there! (Ctrl+C to exit): ")
