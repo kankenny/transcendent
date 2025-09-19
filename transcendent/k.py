@@ -1,7 +1,12 @@
 from dotenv import load_dotenv
 import os
 
-from smolagents import CodeAgent, InferenceClientModel, LocalModel, DuckDuckGoSearchTool
+from smolagents import (
+    CodeAgent,
+    InferenceClientModel,
+    DuckDuckGoSearchTool,
+    TransformersModel,
+)
 
 
 def build_remote_model():
@@ -12,11 +17,10 @@ def build_remote_model():
 
 
 def build_local_model():
-    print("Using local model (offline mode).")
-    return LocalModel.from_pretrained(
-        repo_id="TheBloke/Mistral-7B-Instruct-v0.3-GGUF",
-        model_file="mistral-7b-instruct-v0.3.Q4_K_M.gguf",
-        backend="llama.cpp",
+    print("Using local model (transformers backend).")
+    return TransformersModel(
+        model_id="mistralai/Mistral-7B-Instruct-v0.3",
+        device_map="auto",
     )
 
 
