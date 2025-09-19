@@ -1,12 +1,8 @@
-from dotenv import load_dotenv
 import os
 
-from smolagents import (
-    CodeAgent,
-    DuckDuckGoSearchTool,
-)
-
+from dotenv import load_dotenv
 from models import build_local_model, build_remote_model
+from smolagents import CodeAgent, DuckDuckGoSearchTool
 
 
 def load_agent():

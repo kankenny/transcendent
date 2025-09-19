@@ -12,3 +12,11 @@ deps:
 	poetry install
 	poetry run pre-commit install
 	poetry env info
+
+.PHONEY: lint
+
+lint:
+	isort .
+	flake8 .
+	black .
+	pre-commit run --all-files

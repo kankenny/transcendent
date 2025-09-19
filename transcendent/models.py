@@ -1,11 +1,8 @@
-import psutil
-import shutil
 import os
+import shutil
 
-from smolagents import (
-    InferenceClientModel,
-    TransformersModel,
-)
+import psutil
+from smolagents import InferenceClientModel, TransformersModel
 
 
 def build_remote_model():
