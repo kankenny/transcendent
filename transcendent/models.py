@@ -1,8 +1,11 @@
-import os
-import shutil
-
 import psutil
-from smolagents import InferenceClientModel, TransformersModel
+import shutil
+import os
+
+from smolagents import (
+    InferenceClientModel,
+    TransformersModel,
+)
 
 
 def build_remote_model():
@@ -19,7 +22,7 @@ def build_local_model():
     print(f"Detected free RAM: {free_ram_gb:.1f} GB")
     print(f"Detected free disk: {free_disk_gb:.1f} GB")
 
-    if free_ram_gb < 8 or free_disk_gb < 15:
+    if free_ram_gb < 8 or free_disk_gb < 30:
         print("Low resources detected. Using TinyLlama (1.1B).")
         model_id = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
     else:
